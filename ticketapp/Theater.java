@@ -7,14 +7,7 @@ public class Theater {
         this.ticketSeller = ticketSeller;
     }
 
-    public void enter(Audience audience){
-        Ticket ticket = ticketSeller.getTicketOffice().getTicket();
-        if(audience.getBag().hasInvitation()){//event
-            audience.getBag().setTicket(ticket);
-        }else{
-            ticketSeller.getTicketOffice().plusAmount(ticket.getFee());
-            audience.getBag().minusCash(ticket.getFee());
-            audience.getBag().setTicket(ticket);
-        }
+    public void enter(Audience audience) {
+        ticketSeller.sellTo(audience); //ticketSeller의 private field에 접근하는 코드 삭제
     }
 }
