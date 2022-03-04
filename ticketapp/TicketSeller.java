@@ -8,6 +8,6 @@ public class TicketSeller {
     }
 
    public void sellTo(Audience audience){ //encapsulation
-       ticketOffice.plusAmount(audience.buy(ticketOffice.getTicket()));
+       ticketOffice.sellTicketTo(audience); //ticketOffice와 audience 사이 새로운 의존성 추가
    }
 }
