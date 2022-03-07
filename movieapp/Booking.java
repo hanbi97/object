@@ -1,10 +1,16 @@
 package movieapp;
 
 public class Booking {
-    private Movie movie;
-    private Screening screening;
     private Long count;
     private Long payment;
 
+    public Booking(Long count, Long payment) {
+        this.count = count;
+        this.payment = payment;
+    }
 
+    public void booking(Long count, Long payment, Screening screening){
+        Booking booking  = new Booking(count, payment);
+        screening.addBooking(booking);
+    }
 }
