@@ -1,9 +1,16 @@
 package movieapp.discountcondition;
 
-public class SequenceDiscountCondition {
-    private Integer sequenceNumber;
+import movieapp.Screening;
 
-    public SequenceDiscountCondition(Integer sequenceNumber) {
-        this.sequenceNumber = sequenceNumber;
+public class SequenceDiscountCondition implements DiscountConditions{
+   private int sequence;
+
+    public SequenceDiscountCondition(int sequence) {
+        this.sequence = sequence;
+    }
+
+    @Override
+    public boolean isSatisfiedBy(Screening screening) {
+        return screening.isSequence(sequence);
     }
 }

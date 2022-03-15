@@ -1,11 +1,7 @@
 package movieapp.discountcondition;
 
-public class DiscountConditions {
-    private PeriodDiscountCondition periodDiscountCondition;
-    private SequenceDiscountCondition sequenceDiscountCondition;
+import movieapp.Screening;
 
-    public DiscountConditions(PeriodDiscountCondition periodDiscountCondition, SequenceDiscountCondition sequenceDiscountCondition) {
-        this.periodDiscountCondition = periodDiscountCondition;
-        this.sequenceDiscountCondition = sequenceDiscountCondition;
-    }
+public interface DiscountConditions {
+    boolean isSatisfiedBy(Screening screening);
 }

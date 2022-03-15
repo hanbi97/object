@@ -1,20 +1,28 @@
 package movieapp.discountpolicy;
 
+import movieapp.Money;
+import movieapp.Screening;
 import movieapp.discountcondition.DiscountConditions;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class DiscountPolicy {
-    private PriceDiscountPolicy priceDiscountPolicy;
-    private RatioDiscountPolicy ratioDiscountPolicy;
-    private List<DiscountConditions> discountConditionsList;
+public abstract class DiscountPolicy {
+    private List<DiscountConditions> discountConditions = new ArrayList<>();
 
-    public DiscountPolicy(PriceDiscountPolicy priceDiscountPolicy, RatioDiscountPolicy ratioDiscountPolicy) {
-        this.priceDiscountPolicy = priceDiscountPolicy;
-        this.ratioDiscountPolicy = ratioDiscountPolicy;
+    public DiscountPolicy(DiscountConditions ... discountConditions) {
+        this.discountConditions = Arrays.asList(discountConditions);
     }
 
-    public void setDiscountConditionsList(DiscountConditions ... discountConditions){
-        this.discountConditionsList = List.of(discountConditions);
+    public Money calculateDiscountAmount(Screening screening){ //공통적으로 가격 계산하는..
+        for(DiscountConditions d : discountConditions){
+            if(d.isSatisfiedBy(screening)){
+                return getDiscountAmount(screening);
+            }
+        }
+        return Money.ZERO;
     }
+
+    abstract protected Money getDiscountAmount(Screening screening); //실제 요금 계산하는 로직은 자식한테
 }
