@@ -1,6 +1,6 @@
 package movieapp.discountcondition;
 
-import movieapp.Screening;
+import movieapp.movie.Screening;
 
 public class SequenceDiscountCondition implements DiscountConditions{
    private int sequence;

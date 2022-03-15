@@ -1,4 +1,4 @@
-package movieapp;
+package movieapp.money;
 
 //BigDecimal: 자바에서 숫자 정밀하게 저장하는 자료구조, double 한계때문에 오차 발생
 //느리긴한데 돈계산할때 사용해야됨

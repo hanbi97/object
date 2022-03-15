@@ -1,10 +1,9 @@
-package movieapp;
+package movieapp.movie;
 
+import movieapp.money.Money;
 import movieapp.discountpolicy.DiscountPolicy;
 
 import java.time.Duration;
-import java.util.List;
-import java.util.Optional;
 
 public class Movie {
     private String name;

@@ -1,4 +1,6 @@
-package movieapp;
+package movieapp.movie;
+
+import movieapp.money.Money;
 
 public class Booking {
     private Customer customer;

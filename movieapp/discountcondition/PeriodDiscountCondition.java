@@ -1,9 +1,8 @@
 package movieapp.discountcondition;
 
-import movieapp.Screening;
+import movieapp.movie.Screening;
 
 import java.time.DayOfWeek;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 public class PeriodDiscountCondition implements DiscountConditions{

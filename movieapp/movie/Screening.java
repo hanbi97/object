@@ -1,8 +1,8 @@
-package movieapp;
+package movieapp.movie;
 
-import java.beans.Customizer;
+import movieapp.money.Money;
+
 import java.time.LocalDateTime;
-import java.util.List;
 
 public class Screening {
     private Movie movie; //연결된 영화

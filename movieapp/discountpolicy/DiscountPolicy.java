@@ -1,7 +1,7 @@
 package movieapp.discountpolicy;
 
-import movieapp.Money;
-import movieapp.Screening;
+import movieapp.money.Money;
+import movieapp.movie.Screening;
 import movieapp.discountcondition.DiscountConditions;
 
 import java.util.ArrayList;
