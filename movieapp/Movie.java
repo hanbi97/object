@@ -24,6 +24,9 @@ public class Movie {
     }
 
     public Money calculateMovieFee(Screening screening){
+        if(discountPolicy==null){
+            return fee;
+        }
         return fee.minus(discountPolicy.calculateDiscountAmount(screening));
         //할인 정책 종류를 판단하는 코드는 어디에도 존재하지 않는다. 그냥 계산하라고 메시지 전달
     }
