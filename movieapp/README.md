@@ -15,3 +15,16 @@
 ![파일_000 (1)](https://user-images.githubusercontent.com/36736904/156868445-44eab730-230e-45a7-b9a8-09128417a336.png)
 
 
+### [객체는 상태와 행동을 가지는 자율적인 존재](https://github.com/hanbi97/object/issues/5)
+### [객체의 협력](https://github.com/hanbi97/object/issues/6)
+### [추상클래스와 인터페이스](https://github.com/hanbi97/object/issues/7)
+### [상속과 다형성](https://github.com/hanbi97/object/issues/8)
+### [추상화와 유연성](https://github.com/hanbi97/object/issues/9)
+### [추상클래스와 인터페이스 간 트레이드오프 및 상속과 합성](https://github.com/hanbi97/object/issues/10)
+
+약간 궁금한거.  
+Movie - Screening / Screening - Booking 1:N 관계인데 Movie에 Screening 담는게 없네 뒤에거도 마찬가지  
+이거 맞는건가
+
+오버로딩: 이름같은함수 인자랑 리턴값만 다른거 / 오버로딩한 메서드는 원래 메서드를 가리지 않아 둘 다 공존  
+오버라이딩: 부모 메서드 자식이 상속해서 재정의 / 자식 메서드가 부모 메서드를 가리기 때문에 외부에서는 부모 메서드 사용 X
