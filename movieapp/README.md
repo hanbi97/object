@@ -22,6 +22,9 @@
 #### [추상화와 유연성](https://github.com/hanbi97/object/issues/9)
 #### [추상클래스와 인터페이스 간 트레이드오프 및 상속과 합성](https://github.com/hanbi97/object/issues/10)
 #### [객체지향 패러다임의 핵심: 역할, 책임, 협력](https://github.com/hanbi97/object/issues/11)
+#### [데이터 중심 설계의 문제점](https://github.com/hanbi97/object/issues/14)
+#### [GRASP 패턴 - 책임 주도 설계 하는법](https://github.com/hanbi97/object/issues/15)
+#### [책임설계 모르겠다면](https://github.com/hanbi97/object/issues/16)
 
 <br>
 
